@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>BookList-PopUp-Hotel cost</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  bg-flatblue">
+            <div class="container">
+                        <a class="navbar-brand  text-white" href="#">JavaScript Mini Project</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                          <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link text-white"aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link text-white " href="#">Book List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="#" id="login">Login</a>
+                              </li>
+                          </ul>
+                        </div>
+            </div>
+        </nav>
+    </header>
+   <!-- popUp section -->
+    <div class="popup">
+        <div class="popupContent">
+            <div class="icon">
+                <i class="far fa-user"></i>
+            </div>
+            <button class="btn btn-danger float-end " id="close">Close</button>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <button class="btn btn-success ">Submit</button>
+              </div>
+        </div>
+    </div>
+    
+    <!-- hotel Cost Section -->
+<main class="container">
+    <section class="hotel-Cost mt-5">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p>First 10 Days : 100$  </p>
+                <p>10-20 Days : 80$  </p>
+                <p>20-Infinity Days : 50$  </p>
+                <p>Enter Days You Stayed</p>
+                <input type="text" id="day">
+                <button onclick="hotelCost()" class="btn  bg-flatblue">See Result</button>
+                <p id ="cost" class="fw-bold text-blue fs-3"> The result is</p>
+            </div>
+            <div class="col-md-4">
+               
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </section>
+</main>
+ 
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
