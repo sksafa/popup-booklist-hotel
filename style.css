@@ -48,7 +48,7 @@ body{
 .popupContent input{
    width: 80%;
 }
- @media(max-width:360px){
+ @media(max-width:300px){
     .responsive{
         margin-top: 10px;
         outline: 0;
